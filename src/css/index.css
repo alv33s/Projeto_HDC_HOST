@@ -1,0 +1,221 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* --------------------------------header----------------------------- */
+header{
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12dvh;
+    padding: 5px 40px;
+
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+
+    img{
+    width: 65px;
+    height: 65px;
+
+    }
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        margin: 20px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    #btn-entrar{
+        background-color: rgb(76, 170, 76);
+        width: 130px;
+        height: 60px;
+        display: flex;
+        align-items: center;  
+        justify-content: center;   
+        border-radius: 8px;   
+    }
+
+}
+
+/* --------------------------------Apresentação----------------------------- */
+
+#apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    width: 100%;
+    div{
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        
+        h1{
+            font-size: 90px;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        p{
+            font-size: 50px;
+            text-shadow: 5px 5px 5px black;
+        }
+    }
+
+    img{
+    width: 100%;
+    height: 70dvh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+}
+
+/* --------------------------------Qualidades----------------------------- */
+
+#container-qualidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 100px; 
+    margin: 200px 0px;
+    color: rgb(75, 75, 75);
+
+    .div-qualidade{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 450px;
+        height: auto;
+        margin: 0px 20px;
+
+        .titulo-icone-qualidade{
+            margin: 20px 0px 20px;
+
+            i{
+                margin-bottom: 10px;
+            }
+
+            .fa-solid.fa-shield-halved, .fa-solid.fa-rocket, .fa-solid.fa-comments{
+                font-size: 60px;
+            }
+
+            .fa-solid.fa-shield-halved{
+                color: rgb(76, 170, 76);
+            }
+
+            .fa-solid.fa-rocket{
+                color: rgba(255, 0, 0, 0.788);
+            }
+
+            .fa-solid.fa-comments{
+                color: orange;
+            }
+
+
+        }
+
+        .texto-qualidade{
+            font-size: 20px;
+            font-weight:1;
+            line-height: 30px;
+        }
+    }
+}
+
+
+/* --------------------------------Planos e Preços----------------------------- */
+
+#container-planos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    margin:50px 0px;
+
+    #titulo-planos{
+
+        margin-bottom: 80px;
+
+        h2{
+            color: rgb(40, 40, 40);
+            font-size: 45px;
+        }
+
+        aside{
+            font-size: 20px;
+        }
+    }
+
+    #div-planos-precos{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+
+        .plano{
+            background-color: rgba(206, 206, 206, 0.644);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 500px;
+            text-align: center;
+
+            .preco{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: green;
+                width: 110px;
+                height: 110px;
+                color: whitesmoke;
+                font-weight: 500;
+                border-radius: 200px;
+                position: absolute;
+                top:-55px;
+                
+                
+            }
+
+            .plano-titulo{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(31, 31, 31);
+                color: whitesmoke;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                padding: 5px;
+                font-size: 25px;
+            }
+
+            .plano-conteudo{
+                width: 100%;
+                background-color: aliceblue;
+                p{
+                    margin: 30px 0px;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+}

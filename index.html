@@ -10,39 +10,46 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/index.css">
         <title>hDC Host</title>
     </head>
     <body>
         <header>
 
-            <div class="logo">
+            <div id="logo">
                 <img src="./src/img/hdchostlogo.png" alt="imagem da logo">
             </div>
 
             <nav>
 
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li id="btn-entrar"></li>
+                    <li>Home</li>
+                    <li>Preços</li>
+                    <li>Contato</li>
+                    <li id="btn-entrar">Entrar</li>
                 </ul>
 
             </nav>
 
         </header>
 
-        <section class="apresentacao">
+
+
+        <section id="apresentacao">
 
             <img src="./src/img/mainbanner.png" alt="Imagem de uma cidade" id="imagem-cidade-apresentacao">
-            <h1>hDC Host</h1>
-            <p>Os melhores serviços de todos os tamanhos!</p>
-
+            <div>
+                <h1>hDC Host</h1>
+                <p>Os melhores serviços de todos os tamanhos!</p>
+            </div>
         </section>
     
-        <section class="container-qualidades">
 
-            <div class="qualidade">
+        
+        <section id="container-qualidades">
+
+            <div class="div-qualidade">
 
                 <div class="titulo-icone-qualidade">
 
@@ -59,7 +66,7 @@
 
             </div>
 
-            <div class="qualidade">
+            <div class="div-qualidade">
 
                 <div class="titulo-icone-qualidade">
 
@@ -76,7 +83,7 @@
 
             </div>
 
-            <div class="qualidade">
+            <div class="div-qualidade">
 
                 <div class="titulo-icone-qualidade">
 
@@ -95,16 +102,16 @@
 
         </section>
 
-        <section class="container-planos">
+        <section id="container-planos">
 
-            <div class="titulo-planos">
+            <div id="titulo-planos">
 
                 <h2>Planos e Preços</h2>
                 <aside>Selecione o plano que atende as suas necessidades</aside>
 
             </div>
 
-            <div class="planos-precos">
+            <div id="div-planos-precos">
 
                 <div class="plano">
 
@@ -171,7 +178,7 @@
 
         </section>
 
-        <section class="procurar-dominio">
+        <section id="procurar-dominio">
 
             <h2>Qual domínio você quer para seu site?</h2>
             <aside>Verifique se o domínio está disponível</aside>
@@ -180,7 +187,7 @@
 
         </section>
 
-        <section class="area-de-contato">
+        <section id="area-de-contato">
 
             <h2>Mande uma mensagem</h2>
             <aside>Envie a sua mensagem, em até 4 horas um especialista entrará em contato</aside>
