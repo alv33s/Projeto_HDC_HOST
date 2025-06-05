@@ -3,7 +3,7 @@ html{
 }
 /* --------------------------------header----------------------------- */
 header{
-    background-color: rgb(31, 31, 31);
+    background-color: #232931;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,7 @@ header{
 #logo{
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     img{
     width: 65px;
@@ -40,10 +41,11 @@ nav {
         margin: 20px;
         font-size: 25px;
         font-weight: 400;
+        cursor: pointer;
     }
 
     #btn-entrar{
-        background-color: rgb(76, 170, 76);
+        background-color: #2dc76b;
         width: 130px;
         height: 60px;
         display: flex;
@@ -117,7 +119,7 @@ nav {
             }
 
             .fa-solid.fa-shield-halved{
-                color: rgb(76, 170, 76);
+                color: #2dc76b;
             }
 
             .fa-solid.fa-rocket{
@@ -172,21 +174,22 @@ nav {
         .plano{
             background-color: rgba(206, 206, 206, 0.644);
             display: flex;
-            align-items: center;
-            flex-direction: column;
+            align-items: center;            flex-direction: column;
             width: 300px;
             height: 500px;
             text-align: center;
+            position: relative;
 
             .preco{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: green;
+                background-color: #2dc76b;
                 width: 110px;
                 height: 110px;
                 color: whitesmoke;
-                font-weight: 500;
+                font-weight: 400;
+                font-size: 20px;
                 border-radius: 200px;
                 position: absolute;
                 top:-55px;
@@ -197,25 +200,217 @@ nav {
             .plano-titulo{
                 width: 100%;
                 height: 100px;
-                background-color: rgb(31, 31, 31);
+                background-color: #232931;
                 color: whitesmoke;
                 display: flex;
                 align-items: end;
                 justify-content: center;
                 padding: 5px;
                 font-size: 25px;
+                font-weight: 500;
             }
 
             .plano-conteudo{
                 width: 100%;
-                background-color: aliceblue;
+
                 p{
-                    margin: 30px 0px;
+                    margin: 35px 0px;
                     font-size: 18px;
                 }
             }
 
+            .saber-mais{
+                width: 100%;
+                height: 80px;
+                color: whitesmoke;
+                background-color: #2dc76b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 0px;
+                font-size: 25px;
+                font-weight: 400;
+                cursor:pointer;
+            }
+
+        }
+
+        .plano.recomendado{
+            .preco{
+                background-color: rgb(247, 85, 85);
+            }
+
+            .saber-mais{
+                background-color: rgb(247, 85, 85);
+            }   
         }
     }
 
+}
+
+
+/* --------------------------------Procurar Domínio----------------------------- */
+
+#procurar-dominio{
+    background-color: #34454f;
+    width: 100%;
+    height: 60dvh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 250px 0px 200px;
+
+    h2{
+        font-size: 60px;
+        
+    }
+
+    aside{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    input{
+        width: 60%;
+        height: 15%;
+        border-radius: 10px;
+        margin: 10px;
+        border: none;
+
+        
+
+    }
+    input::placeholder{
+            font-size: 30px;
+            padding: 10px 10px;
+    }
+
+    button{
+        width: 15%;
+        height: 15%;
+        margin: 10px;
+        border-radius: 8px;
+        background-color: #2dc76b;
+        border: none;
+        color: inherit;
+        transition: 0.5s;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+
+    button:hover{
+            scale: 1.1;
+            background-color: whitesmoke;
+            color: #2dc76b;
+        }
+
+}
+
+
+/* --------------------------------Area De Contato----------------------------- */
+
+#area-de-contato{
+    width: 100%;
+    height: 50dvh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px auto;
+    margin-bottom: 100px;
+    
+
+    color: rgb(40, 40, 40);
+
+    h2{
+        font-size: 50px;
+    }
+
+    aside{
+        margin-bottom: 50px;
+        font-size: 25px;
+        color: rgb(100, 100, 100);
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        fieldset{
+            width: 1000px;
+            height: 70px;
+            padding: 5px;
+            text-align: center;
+            border: none;
+            
+            input{
+            width: 200px;
+            height: 50px;
+            border:1px solid rgb(167, 167, 167);
+            border-radius: 5px;
+            padding: 20px;
+            margin: 0px 10px;
+            }
+
+            input::placeholder{
+                font-size: 15px;
+                color: #0000005e;
+                font-weight: lighter;
+            }
+        }
+
+        textarea{
+            width: 500px;
+            border: 1px solid rgb(167, 167, 167);
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        textarea::placeholder{
+            font-size: 15px;
+            color: #0000005e;
+            font-weight: lighter;
+        }
+
+        button{
+            width: 20%;
+            height: 15%;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: #2dc76b;
+            border: none;
+            color: whitesmoke;
+            transition: 0.5s;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button::placeholder{
+            font-size: 15px;
+            color: #0000005e;
+            font-weight: lighter;
+        }
+
+        button:hover{
+        scale: 1.1;
+        }
+    }   
+}
+
+/* --------------------------------Footer----------------------------- */
+
+footer{
+    width: 100%;
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #232931;
 }
