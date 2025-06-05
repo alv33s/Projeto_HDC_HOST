@@ -1,0 +1,285 @@
+/* ----------------------------celular----------------------- */
+
+@media screen and (max-width: 600px)
+{
+    nav ul
+    {
+        display: none;
+    }
+
+    nav .sanduiche.celular
+    {
+        display: flex;
+    }
+
+    #apresentacao
+    {
+
+        div
+        {
+
+            h1
+            {
+                font-size: 55px;
+            }
+
+            p
+            {
+                font-size: 35px;
+            }
+        }
+
+    }
+
+
+    #container-qualidades
+    {
+        flex-direction: column;
+         
+        .div-qualidade
+        {
+            margin: 20PX;
+        }
+    }
+
+
+    #container-planos
+    {
+
+        #div-planos-precos
+        {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .plano
+            {
+                margin: 50px;
+            }
+        }
+    }
+
+    #procurar-dominio
+    {
+        h2
+        {
+            font-size: 30px;
+        }
+
+        aside
+        {
+            font-size: 20px;
+        }
+
+        input
+        {
+            height: 10%;
+            width: 75%;
+        }
+
+        input::placeholder
+        {
+            font-size: 20px;
+        }
+
+        button
+        {
+            width: 40%;
+            height: 10%;
+            font-size: 20px;
+        }
+    }
+
+    #area-de-contato
+    {
+        h2
+        {
+            font-size:40px ;
+        }
+
+        aside
+        {
+            font-size: 16px;
+        }
+
+        form
+        {
+            #inf-pessoal
+            {
+                input
+                {
+                    width: 20%;
+                    height: 20%;
+                }
+
+                input::placeholder
+                {
+                    font-size: 15px;
+                }
+
+            }
+
+
+            textarea
+            {
+                width: 50%;
+                height: 50%;
+            }   
+
+            textarea::placeholder
+            {
+                font-size: 15px;            
+            }
+
+        }
+        
+
+    }
+
+}
+
+
+
+/* ----------------------------tablets----------------------- */
+
+@media screen and (min-width:601px ) and (max-width:768px){
+    nav ul li{
+        font-size: 15px;
+
+
+    }
+
+    nav ul #btn-entrar
+    {
+        width: 100px;
+        height: 50px;
+    }
+
+    
+
+    #apresentacao
+    {
+
+        div
+        {
+
+            h1
+            {
+                font-size: 55px;
+            }
+
+            p
+            {
+                font-size: 35px;
+            }
+        }
+
+    }
+
+
+    #container-qualidades
+    {
+        flex-direction: column;
+         
+        .div-qualidade
+        {
+            margin: 20PX;
+        }
+    }
+
+
+    #container-planos
+    {
+
+        #div-planos-precos
+        {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .plano
+            {
+                margin: 50px;
+            }
+        }
+    }
+
+    #procurar-dominio
+    {
+        h2
+        {
+            font-size: 30px;
+        }
+
+        aside
+        {
+            font-size: 20px;
+        }
+
+        input
+        {
+            height: 10%;
+            width: 75%;
+        }
+
+        input::placeholder
+        {
+            font-size: 20px;
+        }
+
+        button
+        {
+            width: 40%;
+            height: 10%;
+            font-size: 20px;
+        }
+    }
+
+    #area-de-contato
+    {
+        h2
+        {
+            font-size:40px ;
+        }
+
+        aside
+        {
+            font-size: 16px;
+        }
+
+        form
+        {
+
+            #inf-pessoal
+            {
+                input
+                {
+                    width: 20%;
+                    height: 20%;
+                }
+
+                input::placeholder
+                {
+                    font-size: 15px;
+                }
+            }
+
+
+            textarea
+            {
+                width: 50%;
+                height: 50%;
+            }   
+
+            textarea::placeholder
+            {
+                font-size: 15px;            
+            }
+
+        }
+        
+
+    }
+
+
+}

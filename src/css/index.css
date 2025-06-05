@@ -1,5 +1,6 @@
 html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100%;
 }
 /* --------------------------------header----------------------------- */
 header{
@@ -53,6 +54,19 @@ nav {
         justify-content: center;   
         border-radius: 8px;   
     }
+
+    .sanduiche.celular{
+        display: none;
+    }
+
+
+    .fa-solid.fa-bars {
+        color: #2dc76b;
+        font-size: 40px;
+    }
+   
+
+
 
 }
 
@@ -261,7 +275,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 250px 0px 200px;
+    margin: 250px 0px 100px;
 
     h2{
         font-size: 60px;
@@ -359,21 +373,21 @@ nav {
             }
 
             input::placeholder{
-                font-size: 15px;
+                font-size: 20px;
                 color: #0000005e;
                 font-weight: lighter;
             }
         }
 
         textarea{
-            width: 500px;
+            width: 50%;
             border: 1px solid rgb(167, 167, 167);
             margin-bottom: 40px;
             padding: 20px;
         }
 
         textarea::placeholder{
-            font-size: 15px;
+            font-size: 20px;
             color: #0000005e;
             font-weight: lighter;
         }
@@ -413,4 +427,5 @@ footer{
     justify-content: center;
     color: whitesmoke;
     background-color: #232931;
+    font-size: 20px;
 }
